@@ -1,9 +1,21 @@
-This directory contains my Vim settings.  For Vim to read it properly, do the
-following:
+This directory contains my Vim settings.  Here is how to use them:
 
-- on Unix, this directory should be named ".vim"; on Windows, "vimfiles"
-- it should be in your home directory
-- also in your home directory, you need a .vimrc file with one line:
+If on Unix, you should have the following in your home directory:
+- a directory called .vim
+- a file called .vimrc
+- a file called .gvimrc
+
+If on Windows, you should have the following in your home directory:
+- a directory called vimfiles
+- a file called _vimrc
+- a file called _gvimrc
+
+The directory should be this one (the one containing this README).
+
+The vimrc file should contain the following line:
 runtime vimrc
-- and a .gvimrc file with the line:
+
+The gvimrc file should contain the following line:
 runtime gvimrc
+
+That is all.

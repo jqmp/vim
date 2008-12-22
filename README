@@ -1,0 +1,9 @@
+This directory contains my Vim settings.  For Vim to read it properly, do the
+following:
+
+- on Unix, this directorys should be named ".vim"; on Windows, "vimfiles"
+- it should be in your home directory
+- also in your home directory, you need a .vimrc file with one line:
+runtime vimrc
+- and a .gvimrc file with the line:
+runtime gvimrc

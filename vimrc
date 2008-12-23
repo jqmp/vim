@@ -75,19 +75,19 @@ let VCSCommandMapPrefix = "<Leader>v"
 " first, prevent vs.vim from automatically creating mappings
 let g:visual_studio_mapping = 0
 " for now, I don't want them mapped
-" nmap <silent> <Leader>vg :call DTEGetFile()<cr>
-" nmap <silent> <Leader>vp :call DTEPutFile()<cr>
-" nmap <silent> <Leader>vt :call DTETaskList()<cr>
-" nmap <silent> <Leader>vo :call DTEOutput()<cr>
-" nmap <silent> <Leader>vf :call DTEFindResults(1)<cr>
-" nmap <silent> <Leader>v2 :call DTEFindResults(2)<cr>
-" nmap <silent> <Leader>vb :call DTEBuildSolution()<cr>
-" nmap <silent> <Leader>vu :call DTEBuildStartupProject()<cr>
-" nmap <silent> <Leader>vc :call DTECompileFile()<cr>
-" nmap <silent> <Leader>vs :call DTEGetSolutions()<cr>
-" nmap <silent> <Leader>vj :call DTEGetProjects()<cr>
-" nmap <silent> <Leader>va :call DTEAbout()<cr>
-" nmap <silent> <Leader>vh :call DTEOnline()<cr>
+nmap <silent> <Leader>Vg :call DTEGetFile()<cr>
+nmap <silent> <Leader>Vp :call DTEPutFile()<cr>
+nmap <silent> <Leader>Vt :call DTETaskList()<cr>
+nmap <silent> <Leader>Vo :call DTEOutput()<cr>
+nmap <silent> <Leader>Vf :call DTEFindResults(1)<cr>
+nmap <silent> <Leader>V2 :call DTEFindResults(2)<cr>
+nmap <silent> <Leader>Vb :call DTEBuildSolution()<cr>
+nmap <silent> <Leader>Vu :call DTEBuildStartupProject()<cr>
+nmap <silent> <Leader>Vc :call DTECompileFile()<cr>
+nmap <silent> <Leader>Vs :call DTEGetSolutions()<cr>
+nmap <silent> <Leader>Vj :call DTEGetProjects()<cr>
+nmap <silent> <Leader>Va :call DTEAbout()<cr>
+nmap <silent> <Leader>Vh :call DTEOnline()<cr>
 
 " GnuPG controls
 let g:GPGExecutable = "gpg2"

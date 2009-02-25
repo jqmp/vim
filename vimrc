@@ -48,11 +48,15 @@ nmap <S-Space>q :tabclose<CR>
 nmap <S-Space>g :tabmove<Space>
 nmap <S-Space>h :tabprevious<CR>
 nmap <S-Space>l :tabnext<CR>
+nmap <S-Space>H :tabmove 0<CR>
+nmap <S-Space>L :tabmove<CR>
 nmap <Space><Space>n :tabnew<CR>
 nmap <Space><Space>q :tabclose<CR>
 nmap <Space><Space>g :tabmove<Space>
 nmap <Space><Space>h :tabprevious<CR>
 nmap <Space><Space>l :tabnext<CR>
+nmap <Space><Space>H :tabmove 0<CR>
+nmap <Space><Space>L :tabmove<CR>
 
 " Plugin controls
 " NERDTree mappings

@@ -69,9 +69,7 @@ let g:EnhCommentifyUserBindings = "yes"
 map <silent> <Leader>c :call EnhancedCommentify('', 'guess')<CR>
 
 " Buffer Explorer mappings
-nmap <silent> <Leader>be :BufExplorer<CR>
-nmap <silent> <Leader>bs :HSBufExplorer<CR>
-nmap <silent> <Leader>bv :VSBufExplorer<CR>
+nmap <silent> <Leader>b :BufExplorer<CR>
 
 " Showmarks settings and mappings
 let g:showmarks_textlower = "\t"

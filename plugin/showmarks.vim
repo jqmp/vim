@@ -316,7 +316,7 @@ fun! s:ShowMarksToggle()
 		call <sid>ShowMarks()
 		aug ShowMarks
 			au!
-			autocmd CursorHold * call s:)
+			autocmd CursorHold * call s:ShowMarks()
 		aug END
 	else
 		let g:showmarks_enable = 0
@@ -372,6 +372,9 @@ fun! s:ShowMarks()
 					let b:ShowMarksLink{mark_at{ln}} = 'ShowMarksHLm'
 					exe 'hi link '.s:ShowMarksDLink{mark_at{ln}}.mark_at{ln}.' '.b:ShowMarksLink{mark_at{ln}}
 				endif
+				" CHANGE: Adding the following block seems to fix a bug where
+				" marks don't disappear from their old positions if they can't
+				" be drawn in their new one.
 				if !exists('b:placed_'.nm) || b:placed_{nm} != ln
 					exe 'sign unplace '.id.' buffer='.winbufnr(0)
 					let b:placed_{nm} = ln

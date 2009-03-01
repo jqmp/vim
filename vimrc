@@ -73,6 +73,16 @@ nmap <silent> <Leader>be :BufExplorer<CR>
 nmap <silent> <Leader>bs :HSBufExplorer<CR>
 nmap <silent> <Leader>bv :VSBufExplorer<CR>
 
+" Showmarks settings and mappings
+let g:showmarks_textlower = "\t"
+let g:showmarks_textupper = "\t"
+let g:showmarks_textother = "\t"
+map <silent> <unique> <leader>mt :ShowMarksToggle<CR>
+map <silent> <unique> <leader>mo :ShowMarksOn<CR>
+map <silent> <unique> <leader>mh :ShowMarksClearMark<CR>
+map <silent> <unique> <leader>ma :ShowMarksClearAll<CR>
+map <silent> <unique> <leader>mm :ShowMarksPlaceMark<CR>
+
 let VCSCommandMapPrefix = "<Leader>v"
 
 " GnuPG controls
@@ -97,6 +107,10 @@ set incsearch
 " ignore case while searching, unless a capital letter is used
 set ignorecase
 set smartcase
+
+" reduce CursorHold timeout (to force quick showmarks updates)
+" this also increases the frequency of swap file writes; whatever
+set ut=500
 
 " allow hidden buffers
 set hidden

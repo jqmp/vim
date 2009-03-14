@@ -71,16 +71,6 @@ map <silent> <Leader>c :call EnhancedCommentify('', 'guess')<CR>
 " Buffer Explorer mappings
 nmap <silent> <Leader>b :BufExplorer<CR>
 
-" Showmarks settings and mappings
-let g:showmarks_textlower = "\t"
-let g:showmarks_textupper = "\t"
-let g:showmarks_textother = "\t"
-map <silent> <unique> <leader>mt :ShowMarksToggle<CR>
-map <silent> <unique> <leader>mo :ShowMarksOn<CR>
-map <silent> <unique> <leader>mh :ShowMarksClearMark<CR>
-map <silent> <unique> <leader>ma :ShowMarksClearAll<CR>
-map <silent> <unique> <leader>mm :ShowMarksPlaceMark<CR>
-
 let VCSCommandMapPrefix = "<Leader>v"
 
 " GnuPG controls

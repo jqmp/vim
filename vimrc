@@ -60,7 +60,7 @@ nmap <Space><Space>L :tabmove<CR>
 
 " Plugin controls
 " NERDTree mappings
-nmap <Leader>n :NERDTreeToggle<CR>
+nmap <silent> <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>N :NERDTree 
 "nmap <Leader>n :execute 'NERDTreeToggle ' . getcwd()<CR>
 
@@ -70,6 +70,9 @@ map <silent> <Leader>c :call EnhancedCommentify('', 'guess')<CR>
 
 " Buffer Explorer mappings
 nmap <silent> <Leader>b :BufExplorer<CR>
+
+" Taglist mappings
+nmap <silent> <Leader>t :TlistToggle<CR>
 
 let VCSCommandMapPrefix = "<Leader>v"
 

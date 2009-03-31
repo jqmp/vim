@@ -42,6 +42,9 @@ vmap R <Esc>'.''gvP''"-P
 " highlighting removal
 nmap <Leader>h :nohl<CR>
 
+" refresh current file
+nmap <Leader>E :e! %<CR>
+
 " tab mappings
 " not sure whether I prefer <S-Space> or <Space><Space>, so I'll try having
 " them both

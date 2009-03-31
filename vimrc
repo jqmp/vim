@@ -36,6 +36,8 @@ noremap ' `
 nmap <Space> 
 imap <S-CR> <Up><End><CR>
 imap {<CR> {<CR>}<Up><End><CR>
+"swap selected text with last delete
+vmap R <Esc>'.''gvP''"-P
 
 " highlighting removal
 nmap <Leader>h :nohl<CR>

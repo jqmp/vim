@@ -79,6 +79,15 @@ nmap <silent> <Leader>b :BufExplorer<CR>
 " Taglist mappings
 nmap <silent> <Leader>t :TlistToggle<CR>
 
+" FuzzyFinder mappings
+nmap <silent> <Leader>fb :FuzzyFinderBuffer<CR>
+nmap <silent> <Leader>ff :FuzzyFinderFile<CR>
+nmap <silent> <Leader>fF :FuzzyFinderMruFile<CR>
+nmap <silent> <Leader>fd :FuzzyFinderDir<CR>
+nmap <silent> <Leader>f] :FuzzyFinderTag<CR>
+nmap <silent> <Leader>ft :FuzzyFinderTaggedFile<CR>
+nmap <silent> <Leader>fc :FuzzyFinderMruCommand<CR>
+
 let VCSCommandMapPrefix = "<Leader>v"
 
 " GnuPG controls

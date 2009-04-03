@@ -89,11 +89,8 @@ nmap <silent> <Leader>ft :FuzzyFinderTaggedFile<CR>
 nmap <silent> <Leader>fc :FuzzyFinderMruCommand<CR>
 
 " VCSCommand mappings
-nmap <Leader>vp :VCSAnnotate<CR>
-nmap <Leader>vs :VCSStatus<CR>
-nmap <Leader>vl :VCSLog<CR>
-
 let VCSCommandMapPrefix = "<Leader>v"
+let VCSCommandDeleteOnHide=1
 
 " GnuPG controls
 let g:GPGExecutable = "gpg2"

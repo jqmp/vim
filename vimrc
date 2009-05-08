@@ -36,14 +36,21 @@ noremap ' `
 nmap <Space> 
 imap <S-CR> <Up><End><CR>
 imap {<CR> {<CR>}<Up><End><CR>
-"swap selected text with last delete
+
+" swap selected text with last delete
 vmap R <Esc>'.''gvP''"-P
+
+" an easier way to repeat a macro
+nmap <C-K> @@
 
 " highlighting removal
 nmap <Leader>h :nohl<CR>
 
 " refresh current file
 nmap <Leader>E :e! %<CR>
+
+" edit the parent directory
+nmap <Leader>d :e %:h<CR>
 
 " tab mappings
 " not sure whether I prefer <S-Space> or <Space><Space>, so I'll try having

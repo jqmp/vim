@@ -112,6 +112,20 @@ endfunction
 " Run an svn diff in the current directory.
 nmap ,v? :Do svn di<CR>:set filetype=diff<CR>
 
+" Screen functions.
+function! ScreenStuff(screen, stuff)
+    let g:screentarget=a:screen
+    execute "silent !screen -S " . g:screentarget . " -X stuff '" . a:stuff .  "'"
+endfunction
+
+function! ReStuff(stuff)
+    execute "silent !screen -S " . g:screentarget . " -X stuff '" . a:stuff .  "'"
+endfunction
+
+function! ScreenKill()
+    execute "silent !screen -S " . g:screentarget . " -X stuff ''"
+endfunction
+
 " GnuPG controls
 let g:GPGExecutable = "gpg2"
 

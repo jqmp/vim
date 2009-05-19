@@ -99,6 +99,19 @@ nmap <silent> <Leader>fc :FuzzyFinderMruCommand<CR>
 let VCSCommandMapPrefix = "<Leader>v"
 let VCSCommandDeleteOnHide=1
 
+" A function for creating scratch buffers.
+function! Scratchify()
+    set buftype=nofile
+    set bufhidden=delete
+    setlocal noswapfile
+endfunction
+
+" Run an external command and put the output in a scratch buffer.
+:com! -nargs=* Do :norm n:call Scratchify()<CR>:read !<args><CR>gg"_dd
+
+" Run an svn diff in the current directory.
+nmap ,v? :Do svn di<CR>:set filetype=diff<CR>
+
 " GnuPG controls
 let g:GPGExecutable = "gpg2"
 

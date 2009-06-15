@@ -141,6 +141,9 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" man pages in vim
+runtime ftplugin/man.vim
+
 " search highlighting
 set hlsearch
 set incsearch

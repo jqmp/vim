@@ -109,6 +109,12 @@ endfunction
 " Run an external command and put the output in a scratch buffer.
 :com! -nargs=* Do :norm n:call Scratchify()<CR>:read !<args><CR>gg"_dd
 
+" Grep for source: ignores binaries, svn, logs.
+com! -nargs=* SrcGrep :Do grep -I --exclude='*.log' --exclude-dir='\.svn' <args>
+
+" Go to the current file's parent directory.
+nmap ,d :e %:h<CR>:call Scratchify()<CR>
+
 " Run an svn diff in the current directory.
 nmap ,v? :Do svn di<CR>:set filetype=diff<CR>
 
@@ -133,7 +139,7 @@ endfunction
 " Kill last screen command.
 :nmap ,rk :call ScreenKill()<CR>
 :nmap ,rK :call ScreenKillHard()<CR>
-"
+
 " GnuPG controls
 let g:GPGExecutable = "gpg2"
 

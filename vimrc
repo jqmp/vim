@@ -126,6 +126,14 @@ function! ScreenKill()
     execute "silent !screen -S " . g:screentarget . " -X stuff ''"
 endfunction
 
+function! ScreenKillHard()
+    execute "silent !screen -S " . g:screentarget . " -X stuff ''"
+endfunction
+
+" Kill last screen command.
+:nmap ,rk :call ScreenKill()<CR>
+:nmap ,rK :call ScreenKillHard()<CR>
+"
 " GnuPG controls
 let g:GPGExecutable = "gpg2"
 

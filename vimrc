@@ -121,8 +121,12 @@ com! -nargs=* SrcGrep :Do grep -I --exclude='*.log' --exclude-dir='\.svn' <args>
 " Run a recursive source grep in the local directory.
 nmap ,g :SrcGrep "" -R . <S-Left><S-Left><Left><Left>
 
-function! ScreenStuff(screen, stuff)
+function! ScreenTarget(screen)
     let g:screentarget=a:screen
+endfunction
+
+function! ScreenStuff(screen, stuff)
+    call ScreenTarget(a:screen)
     execute "silent !screen -S " . g:screentarget . " -X stuff '" . a:stuff .  "'"
 endfunction
 

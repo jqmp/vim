@@ -9,6 +9,9 @@
 " License:  GPL (Gnu Public License)
 " GetLatestVimScripts: 1234 1 :AutoInstall: yankring.vim
 
+" Disable yankrim for now, it seems broken.
+finish
+
 if exists('loaded_yankring') || &cp
     finish
 endif

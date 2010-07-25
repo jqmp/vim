@@ -18,9 +18,6 @@ endif
 set laststatus=2
 set statusline=%2n%<\ %#StatusLineNC#%{expand('%:p:h')}\/%#StatusLine#%{expand('%:t')}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
-" colorscheme
-colorscheme inkpot
-
 " convenient commands
 " change the CWD to the parent of the current file
 command! CD :cd %:h

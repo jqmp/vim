@@ -18,6 +18,10 @@ endif
 set laststatus=2
 set statusline=%2n%<\ %#StatusLineNC#%{expand('%:p:h')}\/%#StatusLine#%{expand('%:t')}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
+" show the 80th column
+set colorcolumn=80
+hi ColorColumn ctermbg=lightgrey guibg=#222222
+
 " convenient commands
 " change the CWD to the parent of the current file
 command! CD :cd %:h

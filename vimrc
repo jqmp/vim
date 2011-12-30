@@ -38,6 +38,10 @@ nmap <Space> 
 imap <S-CR> <Up><End><CR>
 imap {<CR> {<CR>}<Up><End><CR>
 
+" use smarter history movement in command mode
+cmap <C-P> <Up>
+cmap <C-N> <Down>
+
 " swap selected text with last delete
 vmap R <Esc>'.''gvP''"-P
 

@@ -96,6 +96,13 @@ nmap <silent> <Leader>fc :FuzzyFinderMruCommand<CR>
 let VCSCommandMapPrefix = "<Leader>v"
 let VCSCommandDeleteOnHide=1
 
+" Fugitive bindings.
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gd :Gdiff<CR>
+nmap <Leader>ga :Gwrite<CR>
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gl :Glog<CR>
+
 " A function for creating scratch buffers.
 function! Scratchify()
     set buftype=nofile

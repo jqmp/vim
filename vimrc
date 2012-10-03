@@ -212,6 +212,9 @@ set ruler
 " turn off cursor blinking in normal mode
 set gcr=n:blinkon0
 
+" turn off audio bell
+set vb
+
 " haven't decided whether to enable these...
 " set mouse=a
 

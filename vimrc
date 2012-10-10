@@ -20,7 +20,7 @@ set statusline=%2n%<\ %#StatusLineNC#%{expand('%:p:h')}\/%#StatusLine#%{expand('
 
 " show the 80th column
 set colorcolumn=80
-hi ColorColumn ctermbg=lightgrey guibg=#222222
+hi ColorColumn ctermbg=lightgrey
 
 " convenient commands
 " change the CWD to the parent of the current file
